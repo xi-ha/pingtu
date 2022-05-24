@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼图</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .box {
+            width: 490px;
+            margin: 100px auto;
+        }
+        
+        .box div {
+            float: left;
+            margin-right: 4px;
+        }
+        
+        .box div img {
+            width: 158px;
+            height: 99px;
+        }
+        
+        .box div:nth-child(3n) {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div><img src="images/OIP-C_01.jpg" alt=""></div>
+        <div><img src="images/OIP-C_07.gif" alt=""></div>
+        <div><img src="images/OIP-C_05.gif" alt=""></div>
+        <div><img src="images/OIP-C_09.gif" alt=""></div>
+        <div><img src="images/OIP-C_04.gif" alt=""></div>
+        <div><img src="images/OIP-C_06.gif" alt=""></div>
+        <div><img src="images/OIP-C_03.jpg" alt=""></div>
+        <div><img src="images/OIP-C_08.gif" alt=""></div>
+        <div><img src="images/OIP-C_02.jpg" alt=""></div>
+    </div>
+    <script>
+        $(function() {
+            $('.box').sortable();
+        })
+    </script>
+</body>
+
+</html>
